@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-noir bg-aurora text-ivory antialiased;
+    font-family: "Tajawal", "Cairo", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    direction: rtl;
+    background-attachment: fixed;
+  }
+
+  a {
+    @apply transition-all duration-300 ease-premium;
+  }
+}
+
+@layer components {
+  .container-premium {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .panel {
+    @apply rounded-2xl border border-amber-400/20 bg-zinc-950/80 shadow-soft backdrop-blur;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-amber-300 via-gold to-amber-400 px-5 py-2.5 font-semibold text-black shadow-glow transition-all hover:-translate-y-0.5 hover:brightness-110;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-xl border border-amber-400/45 bg-black/35 px-5 py-2.5 font-semibold text-amber-100 transition-all hover:-translate-y-0.5 hover:border-gold hover:bg-amber-500/10;
+  }
+
+  .brand-title {
+    background: linear-gradient(120deg, #f6f2e9 0%, #d4af37 35%, #f6f2e9 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
